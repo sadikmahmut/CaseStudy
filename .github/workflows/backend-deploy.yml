@@ -1,0 +1,44 @@
+name: Backend Deployment
+
+on:
+  push:
+    branches:
+      - main  # Adjust the branch name as needed
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v1
+        with:
+          dotnet-version: 7.0  # Specify the .NET version you are using
+
+      - name: Install Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: 18.12.1  # Specify the Node.js version you are using (if needed)
+
+      - name: Restore and Build Backend
+        run: |
+          dotnet restore backend-app/backend-app.csproj
+          dotnet build backend-app/backend-app.csproj --configuration Release
+        working-directory: ./backend-app  # Set the working directory to the root of your repository
+
+      # You can add additional steps here for running tests, code analysis, etc.
+
+      - name: Publish Backend
+        run: |
+          dotnet publish backend-app/backend-app.csproj --configuration Release --output ./publish
+        working-directory: ./  # Set the working directory to the root of your repository
+
+      - name: Deploy to GitHub Pages
+        uses: JamesIves/github-pages-deploy-action@4.1.2
+        with:
+          branch: gh-pages  # Specify the branch where you want to deploy
+          folder: ./publish  # Set the folder containing the published files
+
