@@ -19,7 +19,7 @@ jobs:
           node-version: 18.12.1  # Specify the Node.js version you are using
 
       - name: Install Dependencies
-        run: npm install
+        run: npm install --force
         working-directory: ./frontend-app  # Set the working directory to the frontend-app subdirectory
 
       - name: Build Frontend
@@ -31,7 +31,7 @@ jobs:
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@4.1.2
         with:
-          branch: gh-pages  # Specify the branch where you want to deploy
+          branch: frontend-gh-pages  # Specify a unique branch for the frontend deployment
           folder: ./frontend-app/build  # Set the folder containing the build output
 
 
