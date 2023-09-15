@@ -23,9 +23,7 @@ jobs:
         working-directory: ./frontend-app  # Set the working directory to the frontend-app subdirectory
 
       - name: Build Frontend
-        run: |
-          sudo chmod +x node_modules/.bin/react-scripts
-          npm run build
+        run: npm run build
         working-directory: ./frontend-app  # Set the working directory to the frontend-app subdirectory
 
       # You can add additional steps here for running tests, code analysis, etc.
