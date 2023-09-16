@@ -35,6 +35,6 @@ jobs:
         with:
           branch: frontend-gh-pages  # Specify a unique branch for the frontend deployment
           folder: ./frontend-app/build  # Set the folder containing the build output
-          access_token: ${{secrets.TOKEN}}
+          token: ${{secrets.TOKEN}}
 
 
