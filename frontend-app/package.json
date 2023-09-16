@@ -2,7 +2,7 @@
   "name": "frontend-app",
   "version": "0.1.0",
   "private": true,
-  "homepage": ".",
+  "homepage": "CaseStudy/home",
   "dependencies": {
     "@material-ui/core": "^4.12.4",
     "@testing-library/jest-dom": "^5.17.0",
