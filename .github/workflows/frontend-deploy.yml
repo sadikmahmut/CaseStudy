@@ -31,25 +31,9 @@ jobs:
       # You can add additional steps here for running tests, code analysis, etc.
 
       
-      #- name: Deploy to GitHub Pages
-       # uses: JamesIves/github-pages-deploy-action@4.1.2
-        #with:
-         # branch: frontend-gh-pages  # Specify a unique branch for the frontend deployment
-          #folder: ./frontend-app/build  # Set the folder containing the build output
+      - name: Deploy to GitHub Pages
+        uses: JamesIves/github-pages-deploy-action@4.1.2
+        with:
+          branch: frontend-gh-pages  # Specify a unique branch for the frontend deployment
+          folder: ./frontend-app/build  # Set the folder containing the build output
           #token: ${{secrets.TOKEN}}
-
-      - name: Set Git user identity
-        run: |
-          git config --global user.email "muhammedsadkmahmut@gmail.com"
-          git config --global user.name "sadikmahmut"
-      
-      - name: Checkout code
-        uses: actions/checkout@v2
-      
-      - name: Deploy build artifacts to frontend-gh-pages
-        run: |
-          git checkout -b frontend-gh-pages
-          git add -f ./frontend-app/build
-          git commit -m "Deploy frontend build artifacts to frontend-gh-pages"
-          git push origin frontend-gh-pages
-
