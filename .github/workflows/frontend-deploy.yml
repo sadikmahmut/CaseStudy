@@ -21,6 +21,9 @@ jobs:
       - name: Modify react-scripts permissions
         run: chmod +x ./frontend-app/node_modules/.bin/react-scripts
 
+      - name: Set CI environment variable
+        run: echo "CI=false" >> $GITHUB_ENV  # Set process.env.CI to false
+
       - name: Build Frontend
         run: npm run build
         working-directory: ./frontend-app  # Set the working directory to the frontend-app subdirectory
