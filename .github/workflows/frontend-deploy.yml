@@ -38,6 +38,14 @@ jobs:
           #folder: ./frontend-app/build  # Set the folder containing the build output
           #token: ${{secrets.TOKEN}}
 
+      - name: Set Git user identity
+        run: |
+          git config --global user.email "you@example.com"
+          git config --global user.name "Your Name"
+      
+      - name: Checkout code
+        uses: actions/checkout@v2
+      
       - name: Deploy build artifacts to frontend-gh-pages
         run: |
           git checkout -b frontend-gh-pages
