@@ -21,7 +21,7 @@ jobs:
       - name: Build Frontend
         run: |
           npm install react-scripts --save
-          npm run build
+          npm run build --force
         working-directory: ./frontend-app  # Set the working directory to the frontend-app subdirectory
 
       # You can add additional steps here for running tests, code analysis, etc.
