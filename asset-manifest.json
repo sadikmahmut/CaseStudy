@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/CaseStudy/home/static/css/main.57e5afb2.css",
-    "main.js": "/CaseStudy/home/static/js/main.db56f677.js",
-    "static/js/787.b3cd2f50.chunk.js": "/CaseStudy/home/static/js/787.b3cd2f50.chunk.js",
-    "static/media/background.png": "/CaseStudy/home/static/media/background.5cea8e55e259613a1f72.png",
-    "index.html": "/CaseStudy/home/index.html",
-    "main.57e5afb2.css.map": "/CaseStudy/home/static/css/main.57e5afb2.css.map",
-    "main.db56f677.js.map": "/CaseStudy/home/static/js/main.db56f677.js.map",
-    "787.b3cd2f50.chunk.js.map": "/CaseStudy/home/static/js/787.b3cd2f50.chunk.js.map"
+    "main.css": "/CaseStudy/static/css/main.57e5afb2.css",
+    "main.js": "/CaseStudy/static/js/main.7716f9ca.js",
+    "static/js/787.b3cd2f50.chunk.js": "/CaseStudy/static/js/787.b3cd2f50.chunk.js",
+    "static/media/background.png": "/CaseStudy/static/media/background.5cea8e55e259613a1f72.png",
+    "index.html": "/CaseStudy/index.html",
+    "main.57e5afb2.css.map": "/CaseStudy/static/css/main.57e5afb2.css.map",
+    "main.7716f9ca.js.map": "/CaseStudy/static/js/main.7716f9ca.js.map",
+    "787.b3cd2f50.chunk.js.map": "/CaseStudy/static/js/787.b3cd2f50.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.57e5afb2.css",
-    "static/js/main.db56f677.js"
+    "static/js/main.7716f9ca.js"
   ]
 }
