@@ -3,7 +3,7 @@ name: Frontend Deployment
 on:
   push:
     branches:
-      - main  # Adjust the branch name as needed
+      - frontend-gh-pages  # Adjust the branch name as needed
 
 jobs:
   build-and-deploy:
