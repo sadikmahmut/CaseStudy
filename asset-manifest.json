@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "./static/css/main.57e5afb2.css",
-    "main.js": "./static/js/main.d6a5568a.js",
-    "static/js/787.b3cd2f50.chunk.js": "./static/js/787.b3cd2f50.chunk.js",
-    "static/media/background.png": "./static/media/background.5cea8e55e259613a1f72.png",
-    "index.html": "./index.html",
-    "main.57e5afb2.css.map": "./static/css/main.57e5afb2.css.map",
-    "main.d6a5568a.js.map": "./static/js/main.d6a5568a.js.map",
-    "787.b3cd2f50.chunk.js.map": "./static/js/787.b3cd2f50.chunk.js.map"
+    "main.css": "/CaseStudy/home/static/css/main.57e5afb2.css",
+    "main.js": "/CaseStudy/home/static/js/main.db56f677.js",
+    "static/js/787.b3cd2f50.chunk.js": "/CaseStudy/home/static/js/787.b3cd2f50.chunk.js",
+    "static/media/background.png": "/CaseStudy/home/static/media/background.5cea8e55e259613a1f72.png",
+    "index.html": "/CaseStudy/home/index.html",
+    "main.57e5afb2.css.map": "/CaseStudy/home/static/css/main.57e5afb2.css.map",
+    "main.db56f677.js.map": "/CaseStudy/home/static/js/main.db56f677.js.map",
+    "787.b3cd2f50.chunk.js.map": "/CaseStudy/home/static/js/787.b3cd2f50.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.57e5afb2.css",
-    "static/js/main.d6a5568a.js"
+    "static/js/main.db56f677.js"
   ]
 }
