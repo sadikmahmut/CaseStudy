@@ -18,9 +18,12 @@ jobs:
         with:
           node-version: 18.12.1  # Specify the Node.js version you are using
 
+      - name: Modify react-scripts permissions
+        run: chmod +x ./frontend-app/node_modules/.bin/react-scripts
+        working-directory: ./frontend-app
+
       - name: Build Frontend
         run: |
-          npm install react-scripts --save
           npm run build
         working-directory: ./frontend-app  # Set the working directory to the frontend-app subdirectory
 
