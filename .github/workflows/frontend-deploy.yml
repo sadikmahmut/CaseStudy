@@ -40,8 +40,8 @@ jobs:
 
       - name: Set Git user identity
         run: |
-          git config --global user.email "you@example.com"
-          git config --global user.name "Your Name"
+          git config --global user.email "muhammedsadkmahmut@gmail.com"
+          git config --global user.name "sadikmahmut"
       
       - name: Checkout code
         uses: actions/checkout@v2
