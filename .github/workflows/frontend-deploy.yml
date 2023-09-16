@@ -18,13 +18,6 @@ jobs:
         with:
           node-version: 18.12.1  # Specify the Node.js version you are using
 
-      - name: Install Dependencies
-        run: |
-          rm -rf node_modules
-          rm package-lock.json
-          npm install --force
-        working-directory: ./frontend-app  # Set the working directory to the frontend-app subdirectory
-
       - name: Build Frontend
         run: npm run build
         working-directory: ./frontend-app  # Set the working directory to the frontend-app subdirectory
