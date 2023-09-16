@@ -3,7 +3,7 @@ name: Frontend Deployment
 on:
   push:
     branches:
-      - frontend-gh-pages  # Adjust the branch name as needed
+      - main  # Adjust the branch name as needed
 
 jobs:
   build-and-deploy:
@@ -30,11 +30,18 @@ jobs:
 
       # You can add additional steps here for running tests, code analysis, etc.
 
-      - name: Deploy to GitHub Pages
-        uses: JamesIves/github-pages-deploy-action@4.1.2
-        with:
-          branch: frontend-gh-pages  # Specify a unique branch for the frontend deployment
-          folder: ./frontend-app/build  # Set the folder containing the build output
-          token: ${{secrets.TOKEN}}
+      
+      #- name: Deploy to GitHub Pages
+       # uses: JamesIves/github-pages-deploy-action@4.1.2
+        #with:
+         # branch: frontend-gh-pages  # Specify a unique branch for the frontend deployment
+          #folder: ./frontend-app/build  # Set the folder containing the build output
+          #token: ${{secrets.TOKEN}}
 
+      - name: Deploy build artifacts to frontend-gh-pages
+        run: |
+          git checkout -b frontend-gh-pages
+          git add -f ./frontend-app/build
+          git commit -m "Deploy frontend build artifacts to frontend-gh-pages"
+          git push origin frontend-gh-pages
 
