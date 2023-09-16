@@ -61,12 +61,10 @@ function App() {
       <Router>
         <Navbar user={user} onLogout={handleLogout} />
         <Routes>
-          <Route path="/" element={<Navigate to="/home" />} />
-          <Route exact path="/" render={() => <Navigate to="/home" />} />
-          <Route path="/home" element={<Home user={user} userId={userId} />} />
+          <Route exact path="/" element={<Home user={user} userId={userId} />} />
           <Route path="/login" element={<Login setUser={setUser} setUserId={setUserId} />} />
           <Route path="/configuration" element={<Configuration userId={userId} />} />
-          <Route path="/registration" element={<Registration />} />
+          <Route path="/registration" element={<Registration />} />
         </Routes>
       </Router>
     </div>
