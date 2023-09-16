@@ -19,7 +19,9 @@ jobs:
           node-version: 18.12.1  # Specify the Node.js version you are using
 
       - name: Build Frontend
-        run: npm run build --force
+        run: |
+          npm install react-scripts --save
+          npm run build
         working-directory: ./frontend-app  # Set the working directory to the frontend-app subdirectory
 
       # You can add additional steps here for running tests, code analysis, etc.
