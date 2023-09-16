@@ -69,7 +69,7 @@ function Login({ setUser, setUserId }) {
         setUser(userData);
         setUserId(userId_);
         // Redirect to the home page
-        history("/home");
+        history("/");
       })
       .catch((error) => {
         // Handle token validation errors here (e.g., expired token)
