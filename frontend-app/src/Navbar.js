@@ -7,7 +7,7 @@ function Navbar({ user, onLogout }) {
     <nav className="navbar">
       <ul className="nav-list">
         <li className="nav-item">
-          <NavLink to="/home" className="nav-link" activeClassName="active-link">
+          <NavLink to="/" className="nav-link" activeClassName="active-link">
             Home
           </NavLink>
         </li>
