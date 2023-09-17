@@ -73,7 +73,7 @@ function Configuration({ userId }) {
     };
 
     axios
-      .post("https://localhost:44388/api/Auth/CreateConfiguration", data)
+      .post("http://40.114.196.124:5000/api/Auth/CreateConfiguration", data)
       .then((response) => {
         handleClose();
         // Reload configurations after creating one
@@ -87,7 +87,7 @@ function Configuration({ userId }) {
   // Function to load configurations from the API
   const loadConfigurations = () => {
     axios
-      .get(`https://localhost:44388/api/Auth/ListConfigurations/${userId}`)
+      .get(`http://40.114.196.124:5000/api/Auth/ListConfigurations/${userId}`)
       .then((response) => {
         setConfigurations(response.data);
         // Extract existing building types from configurations
