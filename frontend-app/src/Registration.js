@@ -47,7 +47,7 @@ function Registration() {
       Password: password,
     };
 
-    const url = "https://localhost:44388/api/Auth/Registration";
+    const url = "http://40.114.196.124:5000/api/Auth/Registration";
 
     axios
       .post(url, data)
