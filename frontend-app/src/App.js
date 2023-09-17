@@ -22,7 +22,7 @@ function App() {
   }, []);
 
   const validateTokenAndSetUser = (token) => {
-    const validateUrl = 'https://localhost:44388/api/Auth/ValidateToken';
+    const validateUrl = 'http://40.114.196.124:5000/api/Auth/ValidateToken';
   
     axios.post(validateUrl, { token })
       .then((response) => {
