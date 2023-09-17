@@ -32,7 +32,7 @@ function Login({ setUser, setUserId }) {
       Password: password,
     };
 
-    const url = "https://localhost:44388/api/Auth/Login";
+    const url = "http://40.114.196.124:5000/api/Auth/Login";
 
     axios
       .post(url, data)
@@ -58,7 +58,7 @@ function Login({ setUser, setUserId }) {
   };
 
   const validateTokenAndSetUser = (token) => {
-    const validateUrl = "https://localhost:44388/api/Auth/ValidateToken";
+    const validateUrl = "http://40.114.196.124:5000/api/Auth/ValidateToken";
 
     axios
       .post(validateUrl, { token })
