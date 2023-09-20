@@ -31,6 +31,16 @@ function Configuration({ userId }) {
 
   const handleOpen = () => {
     setOpen(true);
+  
+    // Reset the input fields when the modal is opened
+    setBuildingType("");
+    setBuildingCost("");
+    setConstructionTime("");
+  
+    // Clear error messages when the modal is opened
+    setBuildingTypeError("");
+    setBuildingCostError("");
+    setConstructionTimeError("");
   };
 
   const handleCreateConfiguration = () => {
